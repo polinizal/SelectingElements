@@ -16,8 +16,8 @@
 
 function loadAfterTime() { 
 
-  var work = document.querySelectorAll('div.card');
-  work.display="none";
+  var work = document.querySelectorAll('div.card:not(.active)');
+  work.style.display="none";
 
 }
 </script>
@@ -72,7 +72,7 @@ function loadAfterTime() {
         </footer>
       </div>
 
-      <div class="card">
+      <div class="card" style="display: none"; >
         <div class="card-content">
           <p class="title">
             “There are two hard things in computer science: cache invalidation,
