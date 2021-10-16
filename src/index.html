@@ -84,6 +84,18 @@
         </footer>
       </div>
     </div>
+    <script>
 
+      setInterval(
+      function myFunction() {
+        var x = document.querySelectorAll(".card:not(.active)");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }},3000);
+      
+    </script>
   </body>
 </html>
+
+ 
